@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco-fundo: #fff;
+    --cinza-slides: #B8B8B8;
+    --azul-principal: #005594;
+    --azul-rodape: #004476; 
+    --azul-fonte: #002139;
+    --laranja-principal: #F38143; 
+    --laranja-fraco: #F6BF86;
+}
+
+.carousel {
+    position: relative;
+  }
+  
+  .carousel .slide {
+    display: none;
+  }
+  
+  .carousel .active {
+    display: block;
+  }
+  
+  .carousel img {
+    max-width: 100%;
+    height: auto;
+  }

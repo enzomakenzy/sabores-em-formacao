@@ -6,28 +6,150 @@
 }
 
 :root {
-    --branco-fundo: #fff;
-    --cinza-slides: #B8B8B8;
-    --azul-principal: #005594;
-    --azul-rodape: #004476; 
-    --azul-fonte: #002139;
-    --laranja-principal: #F38143; 
-    --laranja-fraco: #F6BF86;
+  --branco-fundo: #fff;
+  --cinza-slides: #B8B8B8;
+  --azul-principal: #005594;
+  --azul-rodape: #004476; 
+  --azul-fonte: #002139;
+  --laranja-principal: #F38143; 
+  --laranja-fraco: #F6BF86;
+  
+  --font-principal: "Josefin Sans", sans-serif;
 }
 
-.carousel {
-    position: relative;
+body {
+    font-family: var(--font-principal);
+    color: var(--azul-fonte);
+    font-size: 1.125em;
+    line-height: 25px;
+}
+
+.bannerhome {
+    margin-top: 72px;
+    height: 163px;
+    width: 100%;
+    background: url('../imgs/home-imgs/banner-home.png') no-repeat;
+    display: flex;
+    align-items: end;
+    color: var(--branco-fundo);
+}
+
+.bannerhome > div {
+    margin: 50px auto 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bannerhome > div > h1 {
+    font-size: 2.1rem;
+}
+
+main {
+    
   }
+
+.gastronomia {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.gastronomia > h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+
+.gastronomia_foto {
+    width: 100%;
+    margin-bottom: 45px;
+}
+.gastronomia > hr {
+    width: 243px;
+    margin: auto;
+    margin-bottom: 40px;
+    border: 1px solid var(--laranja-principal);
+}
+
+.gastronomia p {
+    margin-bottom: 20px;
+}
+
+.escolhersenac {
+    background-color: var(--azul-principal);
+    color: var(--branco-fundo);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.escolhersenac h3 {
+    font-weight: 500;                                           
+    font-size: 1.25em;
+    display: inline;
+}
+
+.escolhersenac_titulo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.escolhersenac_titulo > div {
+    padding-right: 2px;
+    height: 46px;
+    margin-right: 15px;
+    background-color: var(--laranja-principal);
+}
+
+.escolhersenac_foto {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.escolhersenac p {
+    padding-bottom: 20px;
+}
+
+.cursos {
+    padding: 30px;
+}
+
+.cursos_titulo {
+    display: flex;
+   border-left: 2px solid var(--laranja-principal); 
+   height: auto;
+   padding-top: 3px;
+   padding-left: 10px;
+    
+}
+
+/* .cursos_titulo > div {
+  padding-right: 2px;
+  height: 23px;
+  margin-right: 15px;
+  background-color: var(--laranja-principal);
   
-  .carousel .slide {
+} */
+
+.cursos h3 {
+    font-size: 1.25em;
+    display: inline;
+    
+}
+
+.cursos div {
+    
+}
+
+.carousel .slide {
     display: none;
-  }
-  
-  .carousel .active {
+}
+
+.carousel .active {
     display: block;
-  }
-  
-  .carousel img {
+}
+
+.carousel img {
     max-width: 100%;
     height: auto;
-  }
+}

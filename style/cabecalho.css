@@ -4,16 +4,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 15px;
+    position: fixed;
+    background-color: var(--branco-fundo);
+    width: 100%;
+    height: 72px;
+    top: 0;
+    left: 0;
 }
 
 #menu-icon {
     color: var(--azul-principal);
     font-size: 36px;
     cursor: pointer;
-    position: fixed;
-    top: 10px;
-    left: 10px;
+    position: absolute;
+    top: 18px;
+    left: 16px;
     z-index: 1;
 }
 
@@ -38,6 +43,7 @@ header {
     color: white;
     display: block;
     transition: 0.3s;
+    margin-bottom: 20px;
 }
 
 .side-menu a:hover {

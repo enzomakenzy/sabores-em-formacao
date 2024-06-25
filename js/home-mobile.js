@@ -1,4 +1,5 @@
 const slides = document.querySelectorAll(".slide");
+const circles = document.querySelectorAll(".circle");
 let currentSlide = 0;
 
 function showSlide(index) {
@@ -7,6 +8,16 @@ function showSlide(index) {
       slide.classList.add("active");
     } else {
       slide.classList.remove("active");
+    }
+  });
+
+  circles.forEach((circle, i) => {
+    if (i === index) {
+      circle.style.background = '#005594';
+      circle.style.color = '#005594';
+    } else {
+      circle.style.background = '';
+      circle.style.color = '';
     }
   });
 }
@@ -21,4 +32,5 @@ document.getElementById("nextButton").addEventListener("click", function() {
   showSlide(currentSlide);
 });
 
+    
 showSlide(currentSlide);

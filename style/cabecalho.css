@@ -1,5 +1,32 @@
 @charset "UTF-8";
 
+body {
+    font-family: var(--font-principal);
+    color: var(--azul-fonte);
+    font-size: 1.125rem;
+    line-height: 25px;
+}
+
+.banner {
+    margin-top: 72px;
+    height: 163px;
+    width: 100%;
+    background: url('../imgs/cursos-imgs/banner-cursos.png') no-repeat;
+    display: flex;
+    align-items: end;
+    color: var(--branco-fundo);
+}
+
+.banner > div {
+    margin: 30px 17px;
+}
+
+.banner > div > h1 {
+    font-size: 2.1rem;
+    line-height: 33px;
+}
+
+
 header {
     display: flex;
     align-items: center;

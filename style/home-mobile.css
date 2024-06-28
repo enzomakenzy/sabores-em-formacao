@@ -249,27 +249,50 @@ footer {
     padding-top: 30px;
 }
 
-.paginas {
+.paginasp {
     display: flex;
-    flex-wrap: wrap;
-    gap: 35px 72px;
     justify-content: space-around;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    align-items: center;
+    margin: 40px 0;
 }
 
-.paginas a {
+.paginasp a {
     color: var(--branco-fundo);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.paginas_cursos {
-    margin-left: 12px;
+.paginas1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 50px;
 }
 
-.paginas_port {
-    margin-right: 12px;
+.paginas2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.creditos {
+    background-color: var(--azul-rodape);
+    color: var(--branco-fundo);
+    font-size: 0.75rem;
+    padding: 10px 0;
+}
+
+.creditos p {
+    text-align: center;
 }
 
 @media screen and (min-width: 426px)  {

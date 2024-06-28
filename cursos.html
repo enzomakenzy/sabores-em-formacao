@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/cabecalho.css">
+    <link rel="stylesheet" href="style/cursos.css">
+    <link rel="stylesheet" href="style/rodape.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title>Cursos</title>
 </head>
 <body>
-    <h1>Pagina de Cursos</h1>
+    <header>
+        <span class="material-symbols-outlined" id="menu-icon">menu</span>
+    
+        <div id="side-menu" class="side-menu">
+            <span class="material-symbols-outlined close-btn" id="close-btn">close</span>
+            <a href="home.html">Home</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="portfoliogeral.html">Portfólios</a>
+            <a href="sobrenos.html">Sobre Nós</a>
+        </div>
+    
+        <img class="logo-senac" src="imgs/senac-cabecalho.png" alt="Logo do Senac">
+    </header>
+    <section class="banner">
+        <div>
+            <h1>Cursos</h1>
+        </div>
+    </section>
+    <main>
+        <section>
+            <h2>Iremos oferecer um total de 8 cursos até o final de 2024.</h2>
+            <img class="cursos" src="imgs/cursos-imgs/cozinheiros-cursos.png" alt="">
+
+            <article>
+                <p>A gastronomia é uma arte culinária que transcende a mera alimentação, envolvendo técnicas, ingredientes e tradições culturais.</p>
+                <p>Este texto introdutório explora a rica história e a diversidade da gastronomia, destacando sua importância na vida cotidiana e sua capacidade de conectar pessoas através dos sabores.</p> 
+                <p>Ao mergulhar neste universo culinário, descobrimos não apenas pratos icônicos de diferentes regiões, mas também a paixão e criatividade por trás de cada refeição, transformando-a em uma experiência memorável e única.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Cursos</h2>
+        </section>
+        <section>
+            <div class="Cozinha_regional">
+                <div></div>
+                <h3>Cozinha Regional</h3>
+            </div>
+            <article>
+                <p>Esse curso é voltado para aqueles que desejam aprofundar seus conhecimentos sobre as tradições culinárias de diferentes regiões. Planejamos oferecer uma imersão nas técnicas de preparo, dos ingredientes típicos. Os alunos aprendem a preparar receitas clássicas e desenvolver a criatividade no preparo desses pratos dando um ar comteporâneo, sempre respeitando a essência da culinária regional.</p>
+                <p>No decorrer do curso, teremos módulos como a:</p>
+                <ul>
+                    <li>História e cultura gastronômica, entendendo as origens e influências dos pratos regionais;</li>
+                    <li>A identificação e utilização dos ingredientes típicos da região;</li>
+                    <li>A utilização técnicas tradicionais e modernas aplicadas na cozinha regional;</li>
+                    <li>Harmonizar pratos com bebidas típicas da região;</li>
+                    <li>Desenvolvimento de releituras modernas dos pratos tradicionais.</li>
+                </ul>
+            </article>
+            <article class="carousel">
+                <div class="slide active">
+                    <img src="imgs/cursos-imgs/fotos-cozinha-regional/cozinha-regional-1.png" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="imgs/cursos-imgs/fotos-cozinha-regional/cozinha-regional-2.png" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                    <img src="imgs/cursos-imgs/fotos-cozinha-regional/cozinha-regional-3.png" alt="Imagem 3">
+                </div>
+                <div class="slide">
+                    <img src="imgs/cursos-imgs/fotos-cozinha-regional/cozinha-regional-4.png" alt="Imagem 4">
+                </div>
+                <div class="botoes">
+                    <div class="botoes_passar">
+                        <span id="prevButton" class="material-symbols-outlined">
+                            arrow_back
+                            </span>
+                        <div class="passar_bolinhas">
+                            <span id="circle1" class="material-symbols-outlined circle">circle</span>
+                            <span id="circle2" class="material-symbols-outlined circle">circle</span>
+                            <span id="circle3" class="material-symbols-outlined circle">circle</span>
+                            <span id="circle4" class="material-symbols-outlined circle">circle</span>
+                        </div>
+                        <span id="nextButton" class="material-symbols-outlined">
+                            arrow_forward
+                            </span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/home-mobile.js"></script>
 </body>
 </html>

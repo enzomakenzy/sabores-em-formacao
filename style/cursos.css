@@ -17,8 +17,7 @@
     --font-principal: "Josefin Sans", sans-serif;
   }
 
-
-#prevButton, #nextButton{
+  #prevButton, #nextButton{
     color: var(--azul-principal);
 }
 
@@ -54,6 +53,14 @@
     border-radius: 50%;
 }
 
+.botoes_saiba {
+    background-color: var(--laranja-principal);
+    color: var(--branco-fundo);
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+}
+
 .carousel .slide {
     display: none;
 }
@@ -66,3 +73,5 @@
     max-width: 100%;
     height: auto;
 }
+
+

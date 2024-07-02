@@ -1,5 +1,60 @@
 @charset "UTF-8";
 
 footer {
+    padding: 0 15px;
     background-color: var(--azul-principal);
+}
+
+.marcas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.paginasp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.paginasp a {
+    color: var(--branco-fundo);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.paginas1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.paginas2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.creditos {
+    background-color: var(--azul-rodape);
+    color: var(--branco-fundo);
+    font-size: 0.75rem;
+    padding: 10px 0;
+}
+
+.creditos p {
+    text-align: center;
 }

@@ -17,7 +17,14 @@
     --font-principal: "Josefin Sans", sans-serif;
   }
 
-  .banner {
+body {
+    font-family: var(--font-principal);
+    color: var(--azul-fonte);
+    font-size: 1.125rem;
+    line-height: 25px;
+}
+
+.banner {
     margin-top: 72px;
     height: 163px;
     width: 100%;
@@ -37,11 +44,78 @@
     line-height: 33px;
 }
 
+.definicao {
+    margin: 0px 30px;
+}
+
+.definicao h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.definicao img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.definicao > article > p {
+    margin-bottom: 15px;
+}
+
+.titulo {
+    margin-top: 35px;
+    padding: 10px;
+    background-color: var(--azul-principal);
+    color: var(--branco-fundo);
+    text-align: center;
+}
+
+.cursos {
+    margin: 0px 30px;
+}
+
+.cozinhareg_nome {
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid var(--laranja-principal); 
+    height: auto;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.cursos_cozinhareg > p {
+    margin-bottom: 25px;
+}
+
+.cursos_cozinhareg > ul {
+    padding-inline-start: 18px;
+    margin-bottom: 25px;
+}
+
+.cursos_cozinhareg > ul > li {
+    margin-bottom: 5px;   
+} 
+
+.carousel p {
+    height: 188px;
+    background: url(/imgs/cursos-imgs/caixa-periodo.png) no-repeat;
+    background-size: 100%;
+    color: var(--branco-fundo);
+    text-align: center;
+    line-height: 25px;
+    padding-top: 20px;
+}
+
   #prevButton, #nextButton{
     color: var(--azul-principal);
 }
 
 .botoes {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +124,7 @@
 
 .botoes_passar {
     margin-bottom: 40px;
-    margin-top: 18px;
+    margin-top: 1px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -59,8 +133,8 @@
 }
 
 .passar_bolinhas {
-    margin-right: 40px;
-    width: 150px;
+    margin-right: 48px;
+    width: 45px;
     display: flex;
     justify-content: space-between;
 }
@@ -90,8 +164,18 @@
 }
 
 .carousel img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
+@media screen and (min-width: 390px){
+    .carousel p {
+        padding-top: 28px;
+    }
+}
 
+@media screen and (min-width: 420px) {
+    .carousel p {
+        padding-top: 35px;
+    }
+}

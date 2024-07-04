@@ -112,6 +112,7 @@ body {
 
   #prevButton, #nextButton{
     color: var(--azul-principal);
+    font-size: 1.8rem;
 }
 
 .botoes {
@@ -168,6 +169,78 @@ body {
     height: auto;
 }
 
+hr {
+    width: 290px;
+    margin: auto;
+    border: 1px solid var(--laranja-principal);
+    margin-bottom: 40px;
+}
+
+.interesse {
+    margin: 0px 30px 30px 30px;
+}
+
+.interesse_titulo {
+    height: 88px;
+    background: url('../imgs/cursos-imgs/gostou-titulo.png') no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interesse_titulo h3 {
+    color: var(--branco-fundo);
+}
+
+.interesse_texto {
+    margin-top: 20px;
+}
+
+.interesse_texto p {
+    margin-bottom: 20px;
+}
+
+.interesse_texto > div {
+    display: flex;
+    justify-content: center;
+}
+
+.interesse_texto a {
+    color: var(--branco-fundo);
+    background-color: var(--azul-principal);
+    text-decoration: none;
+    padding: 18px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.interesse_fotos {
+    margin-top: 50px;
+}
+
+.fotos_menores {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.fotos_menores > img {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.fotos_chefs {
+    margin: auto;
+    width: 100%;
+    margin-left: 2px;
+}
+
+.fotos_chefs > img {
+    width: 100%;
+    
+}
+
 @media screen and (min-width: 390px){
     .carousel p {
         padding-top: 28px;
@@ -177,5 +250,6 @@ body {
 @media screen and (min-width: 420px) {
     .carousel p {
         padding-top: 35px;
+        line-height:28px;
     }
 }

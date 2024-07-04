@@ -155,6 +155,7 @@ body {
 
 #prevButton, #nextButton{
     color: var(--azul-principal);
+    font-size: 1.8rem;
 }
 
 .botoes {

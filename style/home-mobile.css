@@ -44,10 +44,6 @@ body {
     font-size: 2.1rem;
 }
 
-main {
-    
-  }
-
 .gastronomia {
     padding-left: 30px;
     padding-right: 30px;
@@ -89,9 +85,9 @@ main {
 }
 
 .escolhersenac_titulo {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
 }
 
 .escolhersenac_titulo > div {
@@ -116,10 +112,10 @@ main {
 
 .cursos_titulo {
     display: flex;
-   border-left: 2px solid var(--laranja-principal); 
-   height: auto;
-   padding-top: 3px;
-   padding-left: 10px;
+    border-left: 2px solid var(--laranja-principal); 
+    height: auto;
+    padding-top: 3px;
+    padding-left: 10px;
     
 }
 

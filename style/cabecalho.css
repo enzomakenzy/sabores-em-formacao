@@ -7,9 +7,6 @@ body {
     line-height: 25px;
 }
 
-
-
-
 header {
     display: flex;
     align-items: center;
@@ -68,10 +65,4 @@ header {
     font-size: 36px;
     cursor: pointer;
     color: white;
-}
-
-
-
-.logo-senac {
-    
 }

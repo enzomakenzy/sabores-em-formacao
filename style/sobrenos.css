@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 50;
+}
+
+:root {
+    --branco-fundo: #fff;
+    --cinza-slides: #B8B8B8;
+    --azul-principal: #005594;
+    --azul-rodape: #004476;
+    --azul-titulo: #003b66;
+    --azul-fonte: #002139;
+    --laranja-principal: #F38143; 
+    --laranja-fraco: #F6BF86;
+    
+    --font-principal: "Josefin Sans", sans-serif;
+  }
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 30px;
+    height: 60px;
+    color: var(--branco-fundo);
+    font-size: 1.25rem;
+    background-color: var(--azul-principal);
+}
+
+.techinside {
+    margin: 0px 30px;
+}
+
+.techinside h2 {
+    display: flex;
+    border-left: 2px solid var(--laranja-principal); 
+    color: var(--azul-titulo);
+    height: auto;
+    margin-bottom: 25px;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.techinside_introducao img {
+    margin: auto;
+}
+

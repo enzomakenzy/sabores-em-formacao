@@ -9,7 +9,8 @@
     --branco-fundo: #fff;
     --cinza-slides: #B8B8B8;
     --azul-principal: #005594;
-    --azul-rodape: #004476; 
+    --azul-rodape: #004476;
+    --azul-titulo: #003b66;
     --azul-fonte: #002139;
     --laranja-principal: #F38143; 
     --laranja-fraco: #F6BF86;
@@ -30,18 +31,23 @@
 }
 
 .chef_nome {
-    width: 250px;
-    margin-bottom: 20px;
+    display: flex;
     border-left: 2px solid var(--laranja-principal); 
-    color: var(--azul-fonte);
+    color: var(--azul-titulo);
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    padding-top: 3px;
+    padding-left: 10px;
 }
 
 .descricao {
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0px 50px;
+    margin: 0px 50px 50px 50px;
     border-radius: 16px;
     background-color: var(--azul-principal);
     color: var(--branco-fundo);
@@ -53,7 +59,7 @@
 } 
 
 .descricao_informacoes {
-
+    margin-right: 8px;
 }
 .descricao_informacoes h3 {
     font-weight: 400;
@@ -61,6 +67,30 @@
     margin-bottom: 10px;
 }
 
+.informacoes_individual {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.informacoes_individual > p {
+    font-size: 1.25rem;
+}
+
+.apresentacao {
+    color: var(--azul-fonte);
+    margin: 0px 30px 40px 30px;
+}
+
+.apresentacao h2 {
+    margin-bottom: 10px;
+    font-size: 1.375rem;
+}
+
+.apresentacao_introducao > p {
+    margin-bottom: 25px;
+}
+ 
 
 #prevButton, #nextButton{
     color: var(--azul-principal);
@@ -100,16 +130,15 @@
     border-radius: 50%;
 }
 
-.botoes_saiba {
-    background-color: var(--laranja-principal);
-    color: var(--branco-fundo);
-    text-decoration: none;
-    padding: 14px 25px;
-    border-radius: 5px;
-}
-
 .carousel .slide {
     display: none;
+}
+
+.slide p {
+    text-align: center;
+    font-family: var(--font-principal);
+    color: var(--azul-fonte);
+    font-size: 1.25rem;
 }
 
 .carousel .active {

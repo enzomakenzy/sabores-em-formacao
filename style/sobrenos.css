@@ -40,7 +40,6 @@
     color: var(--azul-titulo);
     padding-top: 3px;
     padding-left: 10px;
-    margin-bottom: 30px;
 }
 
 .fototech {
@@ -52,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin: 70px 0px;
+    margin: 40px 0px 70px 0px;
 }
 
 .introducao_mvv, .introducao_mvv > div {
@@ -93,6 +92,39 @@
 .funcoes_membros {
     margin-bottom: 30px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membros_devs {
+    height: 60px;
+    width: 326px;
+    background: url('../imgs/sobre-imgs/devs-front-end.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.membros_webd {
+    width: 212px;
+    height: 60px;
+    background: url('../imgs/sobre-imgs/web-des.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.membros_redatores {
+    width: 262px;
+    height: 59px;
+    background: url('../imgs/sobre-imgs/redatores.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .parceria {
@@ -112,4 +144,11 @@
 
 .parceria_cont > div > p {
     margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px){
+    .titulo {
+        margin-top: 110px;
+        padding-right: 50px;
+    }
 }

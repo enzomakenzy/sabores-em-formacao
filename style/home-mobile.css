@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+*:focus {
+    outline: none;
+}
+
+
 :root {
   --branco-fundo: #fff;
   --cinza-slides: #B8B8B8;
@@ -20,7 +25,7 @@
 body {
     font-family: var(--font-principal);
     color: var(--azul-fonte);
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 25px;
 }
 
@@ -32,7 +37,9 @@ body {
     display: flex;
     align-items: end;
     color: var(--branco-fundo);
+    background-position: center center;
 }
+
 
 .bannerhome > div {
     margin: 50px auto 17px;
@@ -41,7 +48,9 @@ body {
 }
 
 .bannerhome > div > h1 {
+    margin-bottom: 5px;
     font-size: 2.1rem;
+    line-height: 33px;
 }
 
 .gastronomia {
@@ -51,6 +60,7 @@ body {
 
 .gastronomia > h2 {
     text-align: center;
+    font-size: 1.25rem;
     margin-top: 30px;
     margin-bottom: 30px;
     font-weight: 600;
@@ -79,7 +89,7 @@ body {
 }
 
 .escolhersenac h3 {
-    font-weight: 500;                                           
+    font-weight: 500;
     font-size: 1.25em;
     display: inline;
 }
@@ -119,22 +129,65 @@ body {
     
 }
 
-/* .cursos_titulo > div {
-  padding-right: 2px;
-  height: 23px;
-  margin-right: 15px;
-  background-color: var(--laranja-principal);
-  
-} */
-
 .cursos h3 {
     font-size: 1.25em;
     display: inline;
     
 }
 
-.cursos div {
-    
+.slide > h4 {
+    margin-top: 25px;
+    font-size: 1.25rem;
+    height: 50px;
+}
+
+.slide_definicao {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.125rem;  
+    height: 150px;
+}
+
+.slide_data {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#prevButton, #nextButton{
+    color: var(--azul-principal);
+    font-size: 1.8rem;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botoes_passar {
+    margin-bottom: 40px;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+}
+
+.passar_bolinhas {
+    margin-right: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    margin: 0px 8px;
+    font-size: 8px;
+    background-color: var(--cinza-slides);
+    color: var(--cinza-slides);
+    border-radius: 50%;
 }
 
 .carousel .slide {
@@ -148,4 +201,76 @@ body {
 .carousel img {
     max-width: 100%;
     height: auto;
+}
+
+.botoes_saiba {
+    background-color: var(--laranja-principal);
+    color: var(--branco-fundo);
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+}
+
+.sobrenos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 245px;
+    background: url('../imgs/home-imgs/sobre-nós-elemento.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: var(--branco-fundo);
+}
+
+.sobrenos p {
+    margin: 20px 12px 0px 50px ;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.sobrenos a {
+    background-color: var(--azul-principal);
+    color: var(--branco-fundo);
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 45px;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+@media screen and (min-width: 426px)  {
+    .sobrenos p {
+        margin: 30px 25px 0px 75px ;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .sobrenos a {
+        margin-top: 30px;
+    }
+
+    .sobrenos h3 {
+        margin-top: 15px;
+    }
+
+    .sobrenos {
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width: 390px)  {
+    .sobrenos p {
+        margin: 30px 25px 0px 75px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .sobrenos {
+        height: 270px;
+    }
 }

@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 50;
+}
+
+:root {
+    --branco-fundo: #fff;
+    --cinza-slides: #B8B8B8;
+    --azul-principal: #005594;
+    --azul-rodape: #004476; 
+    --azul-fonte: #002139;
+    --laranja-principal: #F38143; 
+    --laranja-fraco: #F6BF86;
+    
+    --font-principal: "Josefin Sans", sans-serif;
+  }
+
+body {
+    font-family: var(--font-principal);
+    color: var(--azul-fonte);
+    font-size: 1.125rem;
+    line-height: 25px;
+}
+
+.banner {
+    margin-top: 72px;
+    height: 163px;
+    width: 100%;
+    background: url('../imgs/cursos-imgs/banner-cursos.png') no-repeat;
+    display: flex;
+    align-items: end;
+    color: var(--branco-fundo);
+    background-position: center center;
+}
+
+.banner > div {
+    margin: 30px 17px;
+}
+
+.banner > div > h1 {
+    font-size: 2.1rem;
+    line-height: 33px;
+}
+
+.definicao {
+    margin: 0px 30px;
+}
+
+.definicao h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.definicao img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.definicao > article > p {
+    margin-bottom: 15px;
+}
+
+.titulo {
+    margin-top: 35px;
+    padding: 10px;
+    background-color: var(--azul-principal);
+    color: var(--branco-fundo);
+    text-align: center;
+}
+
+.cursos {
+    margin: 0px 30px;
+}
+
+.cozinhareg_nome {
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid var(--laranja-principal); 
+    height: auto;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.cursos_cozinhareg > p {
+    margin-bottom: 25px;
+}
+
+.cursos_cozinhareg > ul {
+    padding-inline-start: 18px;
+    margin-bottom: 25px;
+}
+
+.cursos_cozinhareg > ul > li {
+    margin-bottom: 5px;   
+} 
+
+.carousel p {
+    height: 188px;
+    background: url(/imgs/cursos-imgs/caixa-periodo.png) no-repeat;
+    background-size: 100%;
+    color: var(--branco-fundo);
+    text-align: center;
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+  #prevButton, #nextButton{
+    color: var(--azul-principal);
+    font-size: 1.8rem;
+}
+
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botoes_passar {
+    margin-bottom: 40px;
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+}
+
+.passar_bolinhas {
+    margin-right: 48px;
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    margin: 0px 8px;
+    font-size: 8px;
+    background-color: var(--cinza-slides);
+    color: var(--cinza-slides);
+    border-radius: 50%;
+}
+
+.botoes_saiba {
+    background-color: var(--laranja-principal);
+    color: var(--branco-fundo);
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+}
+
+.carousel .slide {
+    display: none;
+}
+
+.carousel .active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    width: 290px;
+    margin: auto;
+    border: 1px solid var(--laranja-principal);
+    margin-bottom: 40px;
+}
+
+.interesse {
+    margin: 0px 30px 30px 30px;
+}
+
+.interesse_titulo {
+    height: 88px;
+    background: url('../imgs/cursos-imgs/gostou-titulo.png') no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interesse_titulo h3 {
+    color: var(--branco-fundo);
+}
+
+.interesse_texto {
+    margin-top: 20px;
+}
+
+.interesse_texto p {
+    margin-bottom: 20px;
+}
+
+.interesse_texto > div {
+    display: flex;
+    justify-content: center;
+}
+
+.interesse_texto a {
+    color: var(--branco-fundo);
+    background-color: var(--azul-principal);
+    text-decoration: none;
+    padding: 18px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.interesse_fotos {
+    margin-top: 50px;
+}
+
+.fotos_menores {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.fotos_menores > img {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.fotos_chefs {
+    margin: auto;
+    width: 100%;
+    margin-left: 2px;
+}
+
+.fotos_chefs > img {
+    width: 100%;
+    
+}
+
+@media screen and (min-width: 390px){
+    .carousel p {
+        padding-top: 28px;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .carousel p {
+        padding-top: 35px;
+        line-height:28px;
+    }
+}

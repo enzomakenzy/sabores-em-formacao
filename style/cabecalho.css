@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+body {
+    font-family: var(--font-principal);
+    color: var(--azul-fonte);
+    font-size: 1.125rem;
+    line-height: 25px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -39,7 +46,7 @@ header {
 .side-menu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: white;
     display: block;
     transition: 0.3s;
@@ -58,10 +65,4 @@ header {
     font-size: 36px;
     cursor: pointer;
     color: white;
-}
-
-
-
-.logo-senac {
-    
 }

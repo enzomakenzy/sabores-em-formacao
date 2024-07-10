@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco-fundo: #fff;
+    --cinza-slides: #B8B8B8;
+    --azul-principal: #005594;
+    --azul-rodape: #004476;
+    --azul-titulo: #003b66;
+    --azul-fonte: #002139;
+    --laranja-principal: #F38143; 
+    --laranja-fraco: #F6BF86;
+    
+    --font-principal: "Josefin Sans", sans-serif;
+  }
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 30px;
+    height: 60px;
+    color: var(--branco-fundo);
+    font-size: 1.25rem;
+    background-color: var(--azul-principal);
+}
+
+.techinside {
+    margin: 0px 30px;
+}
+
+.subtitulo {
+    display: flex;
+    border-left: 2px solid var(--laranja-principal); 
+    color: var(--azul-titulo);
+    padding-top: 3px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.fototech {
+    width: 230px;
+}
+
+.techinside_introducao > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 70px 0px;
+}
+
+.introducao_mvv, .introducao_mvv > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.equipe {
+    background-color: var(--azul-principal);
+    color: var(--branco-fundo);
+    padding: 30px;
+}
+
+.equipe_descricao {
+    margin-bottom: 50px;
+}
+
+.equipe_descricao > h2 {
+    display: flex;
+    border-left: 2px solid var(--laranja-principal); 
+    padding-top: 3px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.equipe_descricao > div > p {
+    margin-bottom: 30px;
+}
+
+.equipe_descricao img {
+    width: 100%;
+}
+
+.funcoes_membros {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.parceria {
+    margin: 30px;
+}
+
+.parceria_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont_logo {
+    width: 230px;
+    margin-bottom: 30px;
+}
+
+.parceria_cont > div > p {
+    margin-bottom: 30px;
+}

@@ -60,10 +60,12 @@ footer {
 }
 
 @media screen and (min-width: 1024px){
-    footer {
+
+    footer > div {
+        max-width: 1200px;
         display: flex;
-        justify-content: center;
-        gap: 60px;
+        justify-content: space-evenly;
+        margin: auto;
         padding-bottom: 30px;
     }
 
@@ -79,5 +81,13 @@ footer {
     .redes {
         flex-direction: column;
         padding-top: 87px;
+    }
+
+    .paginasp {
+        gap: 100px;
+    }
+
+    .paginas1 {
+        gap: 50px;
     }
 }

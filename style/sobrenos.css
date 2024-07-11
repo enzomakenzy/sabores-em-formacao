@@ -97,6 +97,11 @@
     margin: 40px 0px;
 }
 
+.equipe_foto2 {
+    width: 100%;
+    margin: 40px 0px;
+}
+
 .funcoes_membros {
     margin-bottom: 30px;
     text-align: center;
@@ -157,7 +162,7 @@
 
 @media screen and (min-width: 1024px){
     .titulo {
-        margin-top: 110px;
+        margin-top: 80px;
         font-size: 1.5rem;
         padding: 15px 36px 15px 0px;
     }
@@ -202,5 +207,48 @@
     .equipe_descricao {
         max-width: 1200px;
         margin: auto;
+        padding-bottom: 60px;
     }
+
+    .equipe_descricao > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    .equipe_descricao > div > div  {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 700px;
+    }
+
+    .equipe_foto {
+        margin: 0;
+        width: 470px;
+    }
+
+    .equipe_foto2 {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .equipe_funcoes {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .parceria {
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 0px 60px;
+    } 
+    
 }

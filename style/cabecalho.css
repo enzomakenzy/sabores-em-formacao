@@ -89,7 +89,7 @@ header {
 
 @media screen and (min-width: 1024px){
     header {
-        height: 110px;
+        height: 80px;
     }
 
     #menu-icon {
@@ -101,8 +101,7 @@ header {
     }
 
     .logo-senac-desk {
-        width: 123px;
-        height: 72px;
+        width: 100px;
     }
 
     .menu-maior {
@@ -127,7 +126,7 @@ header {
     .menu-maior a {
         text-decoration: none;
         color: var(--azul-principal);
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 600;
      } 
 }

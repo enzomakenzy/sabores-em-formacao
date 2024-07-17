@@ -21,7 +21,10 @@ body {
     font-family: var(--font-principal);
     color: var(--azul-fonte);
     font-size: 1.125rem;
-    line-height: 25px;
+}
+
+main {
+    line-height: 35px;
 }
 
 .banner {
@@ -181,16 +184,21 @@ hr {
 }
 
 .interesse_titulo {
-    height: 88px;
+    height: 120px;
     background: url('../imgs/cursos-imgs/gostou-titulo-pequeno.png') no-repeat;
     background-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .interesse_titulo h3 {
     color: var(--branco-fundo);
+}
+
+.titulo_desk {
+    display: none;
 }
 
 .interesse_texto {
@@ -241,6 +249,14 @@ hr {
     
 }
 
+@media screen and (min-width: 400px) {
+    .interesse_titulo {
+        background: url('../imgs/cursos-imgs/gostou-titulo-grande.png') no-repeat;
+        background-size: 100%;
+        height: 110px;
+    }
+}
+
 @media screen and (min-width: 390px){
     .carousel p {
         padding-top: 28px;
@@ -275,27 +291,177 @@ hr {
     }
     
     .definicao > div {
-        margin: auto;
+        margin: 80px auto;
         max-width: 1200px;
     }
 
     .definicao h2 {
         text-align: center;
-        font-size: 1.875rem;
-        margin: 80px 0px;
+        font-size: 2rem;
+        margin-bottom: 80px;
         font-weight: 600;
-    }
-
-    .definicao img {
-        
     }
 
     .apresenta {
         display: flex;
         align-items: center;
+        justify-content: space-around;
+    }
+
+    .apresenta > div {
+        width: 500px;
+        margin-right: 60px;
     }
 
     .apresenta > article {
+        width: 400px;
+        padding-right: 20px;
+        border-right: 3px solid #F38143;
+    }
+
+    .apresenta p {
+        text-align: end;
+    }
+
+    .titulo {
+        margin-top: 0;
+        padding: 45px 50px 45px 0px;
+        font-size: 3.1rem;
+    }
+
+    .cursos {
+        margin: 80px 60px;
+    }
+
+    .cursos > div {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    .cursos_cozinhareg {
         width: 600px;
+    }
+
+    .cozinhareg_nome {
+        border-left: 3px solid var(--laranja-principal);
+        padding-left: 25px; 
+        padding-top: 10px;
+        line-height: 40px;
+        margin-bottom: 40px;
+        font-size: 1.6rem;
+    }
+
+    .titulo_mobile {
+        display: none;
+    }
+
+    
+    .carousel {
+        padding-top: 20px;
+    }
+    
+    .carousel img {
+        width: 450px;
+    }
+    
+    #prevButton, #nextButton {
+        font-size: 2.2rem;
+    }
+    
+    .circle {
+        font-size: 10px;
+    }
+    
+    hr {
+        width: 360px;
+        border: 2px solid var(--laranja-principal);
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
+    .carousel p {
+        padding-top: 30px;
+        font-size: 1.25rem;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .interesse {
+        margin: 80px 60px;
+    }
+    
+    .interesse > div {
+        margin: auto;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .titulo_desk {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .interesse_titulo {
+        width: 575px;
+        background: url('../imgs/cursos-imgs/fotos-maior/gostou-titulo-maior.png') no-repeat;
+        background-size: 100%;
+        height: 85px;
+        margin: auto;
+    }
+
+    .interesse_texto p {
+        margin-bottom: 25px;
+        line-height: 30px;
+    }
+
+    .interesse_texto > div {
+        margin-bottom: 60px;
+    }
+
+    .interesse_fotos {
+        margin-top: 0;
+    }
+
+    .fotos_menores {
+        justify-content: space-between;
+    }
+
+    .conteudo {
+        max-width: 1000px;
+        text-align: center;
+    }
+
+    .fotosinteresse {
+        max-width: 600px;
+    }
+
+    .fotosinteresse img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .interesse > div {
+        flex-direction: row;
+    }
+
+    .interesse_titulo {
+        margin-bottom: 40px;
+    }
+
+    .conteudo {
+        max-width: 600px;
+        text-align: left;
+        margin-right: 60px;
+    }
+
+    .interesse_texto {
+        border-left: 3px solid var(--laranja-principal);
+        padding-left: 30px;
     }
 }

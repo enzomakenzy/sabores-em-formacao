@@ -274,3 +274,46 @@ body {
         height: 270px;
     }
 }
+
+@media screen and (min-width: 1024px){
+    .bannerhome {
+        background: url('../imgs/home-imgs/home-maior/banner-home-maior.png') no-repeat;
+        height: 400px;
+        background-position: center center;
+    }
+
+    .bannerhome > div {
+        margin: 400px auto 60px auto;
+        width: 1200px;
+    }
+
+    .bannerhome > div > h1 {
+        font-size: 3.75rem;
+    }
+
+    .bannerhome > div > p {
+        font-size: 1.75rem;
+    }
+
+    .bannerhome > div > h1, .bannerhome > div > p {
+      margin: 0px 60px 20px 60px;
+      line-height: 40px;
+    }
+
+    .gastronomia {
+        padding-left: 60px;
+        padding-right: 60px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .gastronomia > div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .gastronomia_foto {
+        width: 600px;
+    }
+}

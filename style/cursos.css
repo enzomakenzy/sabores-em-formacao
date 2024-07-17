@@ -137,7 +137,7 @@ main {
 }
 
 .passar_bolinhas {
-    margin-right: 48px;
+    margin-right: 56px;
     width: 45px;
     display: flex;
     justify-content: space-between;
@@ -305,16 +305,16 @@ hr {
     .apresenta {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .apresenta > div {
-        width: 500px;
+        width: 550px;
         margin-right: 60px;
     }
 
     .apresenta > article {
-        width: 400px;
+        width: 550px;
         padding-right: 20px;
         border-right: 3px solid #F38143;
     }
@@ -342,6 +342,7 @@ hr {
 
     .cursos_cozinhareg {
         width: 600px;
+        margin-right: 60px;
     }
 
     .cozinhareg_nome {

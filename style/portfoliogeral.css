@@ -140,8 +140,54 @@
         background-position: top center;
     }
 
-    .banner > div {
+    .banner div {
         width: 1200px;
         margin: 400px auto 100px auto;
+    }
+
+    .banner > div > h1 {
+        font-size: 3.75rem;
+        padding-left: 60px;
+    }
+
+    .titulo_professores {
+        
+        max-width: 1200px;
+        width: 100%;
+        margin: 60px auto;
+    }
+
+    .titulo_professores > h2 {
+        margin: 0px;
+        display: block;
+    }
+
+    .carousel {
+        margin: 60px;
+    }
+
+    .carousel .slide {
+        display: block;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botoes {
+        display: none;
+    }
+
+    .carousel_users {
+        display: flex;
+        gap: 40px;
+        max-width: 1200px;
+        margin: auto;
+        padding-right: 20px;
+    }
+
+    .carousel_users > div {
+        
     }
 }

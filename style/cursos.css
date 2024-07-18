@@ -24,7 +24,7 @@ body {
 }
 
 main {
-    line-height: 35px;
+    line-height: 25px;
 }
 
 .banner {
@@ -137,7 +137,7 @@ main {
 }
 
 .passar_bolinhas {
-    margin-right: 56px;
+    margin-right: 48px;
     width: 45px;
     display: flex;
     justify-content: space-between;
@@ -271,6 +271,10 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
+    main {
+        line-height: 35px;
+    }
+
     .banner { 
         background-image: url('../imgs/cursos-imgs/banner-cursos.png');
         height: 400px;
@@ -309,12 +313,12 @@ hr {
     }
 
     .apresenta > div {
-        width: 550px;
+        width: 500px;
         margin-right: 60px;
     }
 
     .apresenta > article {
-        width: 550px;
+        width: 500px;
         padding-right: 20px;
         border-right: 3px solid #F38143;
     }
@@ -342,7 +346,6 @@ hr {
 
     .cursos_cozinhareg {
         width: 600px;
-        margin-right: 60px;
     }
 
     .cozinhareg_nome {
@@ -427,23 +430,12 @@ hr {
     .interesse_fotos {
         margin-top: 0;
     }
-
-    .fotos_menores {
-        justify-content: space-between;
-    }
-
+    
     .conteudo {
         max-width: 1000px;
         text-align: center;
     }
-
-    .fotosinteresse {
-        max-width: 600px;
-    }
-
-    .fotosinteresse img {
-        width: 100%;
-    }
+ 
 }
 
 @media screen and (min-width: 1300px) {

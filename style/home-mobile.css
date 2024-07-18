@@ -25,8 +25,6 @@
 body {
     font-family: var(--font-principal);
     color: var(--azul-fonte);
-    font-size: 1.125rem;
-    line-height: 25px;
 }
 
 .bannerhome {
@@ -121,7 +119,6 @@ body {
 }
 
 .cursos_titulo {
-    display: flex;
     border-left: 2px solid var(--laranja-principal); 
     height: auto;
     padding-top: 3px;
@@ -135,7 +132,7 @@ body {
     
 }
 
-.slide > h4 {
+.slide h4 {
     margin-top: 25px;
     font-size: 1.25rem;
     height: 50px;
@@ -211,7 +208,7 @@ body {
     border-radius: 5px;
 }
 
-.sobrenos {
+.sobrenos > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,6 +273,11 @@ body {
 }
 
 @media screen and (min-width: 1024px){
+
+    body {
+        line-height: 35px;
+    }
+
     .bannerhome {
         background: url('../imgs/home-imgs/home-maior/banner-home-maior.png') no-repeat;
         height: 400px;
@@ -304,16 +306,238 @@ body {
         padding-left: 60px;
         padding-right: 60px;
         max-width: 1200px;
+        margin: 80px auto;
+    }
+
+    .gastronomia h2 {
+        margin: 0px auto 40px auto;
+        font-size: 2rem;
+        width: 650px;
+        line-height: 40px;
+    }
+
+    .gastronomia_cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .gastronomia_cont > article {
+        width: 700px;
+        padding-top: 20px;
+        padding-left: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .gastronomia_foto {
+        width: 550px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+
+    .escolhersenac {
+        padding: 60px;
+    }
+
+    .escolhersenac > div {
+        max-width: 1200px;
         margin: auto;
     }
 
-    .gastronomia > div {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
+    .escolhersenac_titulo > div {
+        display: none;
     }
 
-    .gastronomia_foto {
-        width: 600px;
+    .escolhersenac_titulo {
+        font-size: 1.70rem;
+        padding-top: 0;
     }
+
+    .escolhersenac_titulo h3 {
+        margin: auto;
+    }
+
+    .escolhersenac_cont {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .escolhersenac_cont > article {
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .escolhersenac_foto {
+        width: 500px;
+    }
+
+    .cursos {
+        margin: 60px;
+    }
+    
+    .cursos > div {
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    .cursos_titulo {
+        font-size: 1.60rem;
+        padding: 10px 0px 10px 20px;
+        border-left: 3px solid var(--laranja-principal);
+        margin-bottom: 20px;
+    }
+
+    .slide > div {
+        display: flex;
+        align-items: end;
+        
+    }
+
+    .slide h4 {
+        height: 0;
+        font-size: 1.5rem;
+        margin-bottom: 70px;
+    }
+
+    .slide_cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 40px;
+    }
+
+    .slide img {
+        max-width: 500px;
+    }
+
+    .slide_definicao {
+        height: 170px;
+    }
+
+    .slide_data {
+        margin-bottom: 0px;
+    }
+
+    .botoes {
+        margin-top: 30px;
+    }
+
+    #prevButton, #nextButton {
+        font-size: 2.25rem;
+    }
+
+    .sobrenos {
+        background: url('');
+        margin: 40px 60px;
+        height: 500px;
+    }
+
+    .sobrenos > div {
+        background: url('../imgs/home-imgs/sobre-nos-1024.png') no-repeat;
+        max-width: 1200px;
+        margin: auto;
+        height: 500px;
+        background-size: 100%;
+    }
+
+    .sobrenos h3 {
+        padding-top: 15px;
+        padding-left: 214px;
+        font-size: 2rem;
+    }
+
+    .sobrenos p {
+        width: 500px;
+        padding-left: 260px;
+        font-size: 1.5rem;
+        line-height: 38px;
+    }
+
+    .sobrenos a {
+        margin-left: 216px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .sobrenos h3 {
+        padding-top: 33px;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .sobrenos h3 {
+        padding-top: 50px;
+    }
+
+    .slide_definicao {
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gastronomia_cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    
+    .gastronomia_cont > article {
+        width: 550px;
+        margin-right: 60px;
+        border-left: 3px solid var(--laranja-principal);
+        padding-top: 20px;
+        padding-left: 30px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .escolhersenac_titulo {
+        margin-bottom: 60px;
+        padding: 12px 20px;
+        border-left: 3px solid var(--laranja-principal);
+        font-size: 1.60rem;
+    }
+
+    .escolhersenac_cont {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .escolhersenac_titulo h3 {
+        margin: 0;
+    }
+
+    .escolhersenac_cont > article {
+        max-width: 600px;
+        text-align: right;
+        padding-right: 30px;
+        border-right: 3px solid var(--laranja-principal);
+    }
+
+    .sobrenos {
+        background: url('');
+        margin: 40px 60px;
+
+    }
+
+    .sobrenos > div {
+        background: url('../imgs/home-imgs/sobre-nos-1200.png') no-repeat;
+        max-width: 1200px;
+        background-size: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1300px){
+    .sobrenos h3 {
+        padding-top: 73px;
+    }
+
 }

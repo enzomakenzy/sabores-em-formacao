@@ -32,6 +32,7 @@ header {
     top: 0;
     left: 0;
     font-family: var(--font-cabecalho);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.475);
 }
 
 #menu-icon {
@@ -44,7 +45,6 @@ header {
     z-index: 1;
 }
 
-/* Estilo do menu lateral */
 .side-menu {
     height: 100%;
     width: 0;

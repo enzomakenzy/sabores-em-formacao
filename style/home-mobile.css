@@ -215,7 +215,7 @@ body {
     padding-top: 40px;
     margin-left: 12px;
     margin-right: 12px;
-    height: 245px;
+    height: 270px;
     background: url('../imgs/home-imgs/sobre-nós-elemento.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -236,6 +236,7 @@ body {
     border-radius: 45px;
     margin-top: 10px;
     margin-left: 45px;
+    margin-bottom: 50px;
 }
 
 @media screen and (min-width: 426px)  {
@@ -260,7 +261,7 @@ body {
 
 }
 
-@media screen and (min-width: 390px)  {
+@media screen and (min-width: 387px)  {
     .sobrenos p {
         margin: 30px 25px 0px 75px;
         font-weight: 400;
@@ -268,7 +269,7 @@ body {
     }
 
     .sobrenos {
-        height: 270px;
+        height: 350px;
     }
 }
 

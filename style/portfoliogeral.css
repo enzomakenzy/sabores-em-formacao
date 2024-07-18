@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    padding: 50;
+    padding: 0;
 }
 
 :root {
@@ -131,4 +131,17 @@
     width: 45px;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px){
+    .banner {
+        background: url('../imgs/portfoliogeral-imgs/maior/banner-maior.png') no-repeat;
+        height: 400px;
+        background-position: top center;
+    }
+
+    .banner > div {
+        width: 1200px;
+        margin: 400px auto 100px auto;
+    }
 }

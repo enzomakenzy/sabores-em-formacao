@@ -416,6 +416,7 @@ body {
 
     .slide_definicao {
         height: 170px;
+        font-size: 1.25rem;
     }
 
     .slide_data {
@@ -474,7 +475,7 @@ body {
     }
 
     .slide_definicao {
-        height: 100px;
+        height: 130px;
     }
 }
 

@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 72px;
     margin-bottom: 40px;
     height: 64px;
     color: var(--branco-fundo);
@@ -31,14 +31,13 @@
 }
 
 .chef_nome {
-    display: flex;
     border-left: 2px solid var(--laranja-principal); 
+    padding-top: 3px;
+    padding-left: 10px;
     color: var(--azul-titulo);
     height: auto;
     margin-left: 50px;
     margin-bottom: 25px;
-    padding-top: 3px;
-    padding-left: 10px;
 }
 
 .descricao {
@@ -53,9 +52,15 @@
     color: var(--branco-fundo);
 }
 
-.descricao > img {
+.descricao_foto {
+    margin: 0px 20px;
+}
+
+.descricao_foto > img {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 20px;
 } 
 
 .descricao_informacoes h3 {
@@ -147,3 +152,49 @@
     height: auto;
 }
 
+@media screen and (min-width: 1024px) {
+    .titulo {
+        margin-top: 80px;
+        font-size: 1.5rem;
+        padding: 15px 36px 15px 0px;
+    }
+
+    .cont {
+        display: flex;
+        align-items: center;
+        margin: 60px auto;
+        max-width: 1200px;
+    }
+
+    .chef_nome {
+        max-width: 1200px;
+        margin: 60px auto;
+        border-left: none;
+        padding: 0;
+    }
+
+    .chef_nome h2{
+        border-left: 2px solid var(--laranja-principal); 
+        padding-top: 10px;
+        padding-left: 20px;
+        font-size: 2.5rem;
+        margin-left: 60px;
+    }
+
+    .descricao_informacoes {
+        margin-bottom: 10px;
+    }
+    
+    .descricao_informacoes p {
+        font-size: 1.5rem;
+    }
+
+    .apresentacao {
+        width: 600px;
+    }
+
+    .carousel {
+        max-width: 600px;
+        margin: auto;
+    }
+}
